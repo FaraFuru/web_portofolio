@@ -1,0 +1,52 @@
+/* css/variables.css */
+:root {
+    /* ── Skema Warna Background Gelap Modern ── */
+    --bg-main:      #121212;    /* Warna dasar website */
+    --bg-secondary: #1A1A1A;    /* Warna selang-seling untuk section */
+    --bg-card:      #242424;    /* Warna untuk kotak project/skill */
+
+    /* ── Skema Warna Aksen Kuning ── */
+    --accent-primary: #FFD700;  /* Kuning utama */
+    --accent-hover:   #E6C200;  /* Kuning sedikit gelap untuk efek hover/klik */
+
+    /* ── Skema Warna Teks ── */
+    --text-primary:   #F8F9FA;  /* Putih terang untuk judul */
+    --text-secondary: #ADB5BD;  /* Abu-abu terang untuk paragraf */
+
+    /* ── Tipografi ── */
+    --font-main: 'Poppins', sans-serif;
+
+    /* ── Scroll Progress Bar ── */
+    --progress-height: 3px;
+
+    /* ── Transisi global ── */
+    --transition-fast:   0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow:   0.5s ease;
+
+    /* ── Project Panel Slide ── */
+    --panel-transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+
+    /* ── Quote Card ── */
+    --quote-border: rgba(255, 215, 0, 0.25);
+    --quote-bg:     rgba(255, 215, 0, 0.05);
+
+    /* ── Skill Dots ── */
+    --dot-size:     7px;
+    --dot-empty:    rgba(255, 255, 255, 0.12);
+    --dot-filled:   #FFD700;
+}
+
+/* ── Penerapan variabel dasar ke body ── */
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    overflow-x: hidden; /* Mencegah scroll horizontal tidak sengaja */
+}
+
+/* ── Warna teks saat di-select/highlight ── */
+::selection {
+    background-color: var(--accent-primary);
+    color: var(--bg-main);
+}

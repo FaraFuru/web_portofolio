@@ -1,0 +1,7 @@
+/* css/main.css */
+
+/* Mengimpor semua file CSS modular */
+@import url('variables.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('animations.css');  
